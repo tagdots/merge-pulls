@@ -1,6 +1,6 @@
-name: "Merge Pull Requests"
+name: "Merge Pulls"
 
-description: "Run merge-pulls to automate the pull request merging"
+description: "Automate your pull request merging process"
 
 author: tagdots
 
