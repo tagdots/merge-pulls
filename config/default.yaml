@@ -12,11 +12,11 @@ bypass-review-count: false
 # GitHub Actions: Use "false" to perform real merges
 dry-run: true
 
-# Labels to exclude to filter PRs (leave empty for all PRs)
+# Exclude PRs with these labels from processing (leave empty for all PRs)
 # Example: ["do-not-merge", "stale"], or leave as [] for all
 exclude_labels: []
 
-# Labels to include to filter PRs (leave empty for all PRs)
+# Include PRs with these labels to process (leave empty for all PRs)
 # Example: ["ready-to-merge", "dependencies"], or leave as [] for all
 include_labels: []
 
