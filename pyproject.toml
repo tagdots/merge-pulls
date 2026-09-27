@@ -4,7 +4,7 @@ requires = [ "hatchling" ]
 
 [project]
 name = "merge-pulls"
-version = "0.0.0"
+version = "1.0.0"
 readme = "README.md"
 license-files = [ "LICENSE" ]
 authors = [
