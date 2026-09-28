@@ -4,7 +4,7 @@
 [![marketplace](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/tagdots/merge-pulls/refs/heads/badges/badges/marketplace.json)](https://github.com/marketplace/actions/merge-pulls)
 [![coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/tagdots/merge-pulls/refs/heads/badges/badges/coverage.json)](https://github.com/tagdots/merge-pulls/actions/workflows/cron-tasks.yaml)
 
-#### Automate your pull request merging process with key featues below
+#### Automate your pull request merging process with key features below
 
 - Multi-Repository Support (_Process PRs across accessible repositories, and organizations(**1**)_)
 - Filtering Capabilities (_Filter PRs by base branch, ex/include labels(**2**), title prefix, and repo owner_)
@@ -13,7 +13,7 @@
 - Bypass Option (_Bypass required review count (**4**)_)
 - Dry-Run Mode (_Preview which PRs would be merged without performing the actual merge_)
 
-> **Note**
+> **Notes**
 >
 > 1. _Multiple organizations access requires Classic Personal Access Token._
 > 1. _In filtering PRs, `exclude-labels` is applied first, followed by `include-labels`._
@@ -31,10 +31,10 @@ Set up a GitHub personal access token (PAT) with the required permissions.
 | Classic PAT      | `repo` scope (full)                                      | Supports multi-organization access    |
 | Fine-grained PAT | `Repository`: Read & Write on Contents and Pull Requests | Limited to single organization access |
 
-> **Note**
+> **Notes**
 >
 > 1. _If you are using GitHub Actions, the default `GITHUB_TOKEN` lacks the admin permissions needed to read branch protection settings._<br>
-> 1. _GitHub Apps do not support GitHub REST API endpoints /users and /user/repos. Thus, we only support the use of classic and fine-grained perosnal access token_.
+> 1. _GitHub Apps do not support GitHub REST API endpoints /users and /user/repos. Thus, we only support the use of classic and fine-grained personal access token_.
 
 <br>
 
@@ -42,17 +42,17 @@ Set up a GitHub personal access token (PAT) with the required permissions.
 
 <br>
 
-| Option                | Description                                           | Default |
-| --------------------- | ----------------------------------------------------- | ------- |
-| `base-branch`         | merge the head branch to the base branch              | `main`  |
-| `bypass-review-count` | bypass required review count rule                     | `false` |
-| `dry-run`             | preview (true); merge (false)                         | `true`  |
-| `exclude-labels`      | filter out PRs from processing (comma/space seprated) | `""`    |
-| `include-labels`      | filter in PRs to process (comma/space seprated)       | `""`    |
-| `merge-method`        | merge strategy: merge, rebase, or squash              | `merge` |
-| `owner`               | filter repos to specific user/org                     | `""`    |
-| `prefix`              | filter PRs with title prefix                          | `""`    |
-| `repo-type`           | filter repos type from all, private, or public        | `all`   |
+| Option                | Description                                            | Default |
+| --------------------- | ------------------------------------------------------ | ------- |
+| `base-branch`         | merge the head branch to the base branch               | `main`  |
+| `bypass-review-count` | bypass required review count rule                      | `false` |
+| `dry-run`             | preview (true); merge (false)                          | `true`  |
+| `exclude-labels`      | filter out PRs from processing (comma/space separated) | `""`    |
+| `include-labels`      | filter in PRs to process (comma/space separated)       | `""`    |
+| `merge-method`        | merge strategy: merge, rebase, or squash               | `merge` |
+| `owner`               | filter repos to specific user/org                      | `""`    |
+| `prefix`              | filter PRs with title prefix                           | `""`    |
+| `repo-type`           | filter repo types: all, private, or public             | `all`   |
 
 <br>
 
